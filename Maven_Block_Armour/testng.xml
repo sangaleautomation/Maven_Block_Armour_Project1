@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="2" parallel="tests">
+
+
+<listeners>
+		<listener class-name="extendReport.ExtentTestNGIReporterListener" />
+</listeners>
+
+  <test name="ChromeTest" thread-count="6" parallel="classes">
+  <parameter name="browser" value="Chrome"/>
+    <classes>
+    <class name="TestNG_Pack.LoginPage_TestClass"/>
+       <class name="TestNG_Pack.CreateAcc_TestClass"/>
+        <class name="TestNG_Pack.LOGIN_TestClass"/>
+         <class name="TestNG_Pack.ForgotPass_TestClass"/>
+          <class name="TestNG_Pack.Profile_TestClass"/>
+           <class name="TestNG_Pack.ChangePassword_TestClass"/>
+         
+         
+    </classes>
+  </test> <!-- Test1 -->
+  
+
+   <test  name="FirefoxTest" thread-count="6" parallel="classes">
+  <parameter name="browser" value="Firefox"/>
+    <classes>
+  
+   <class name="TestNG_Pack.LoginPage_TestClass"/>
+       <class name="TestNG_Pack.CreateAcc_TestClass"/>
+        <class name="TestNG_Pack.LOGIN_TestClass"/>
+         <class name="TestNG_Pack.ForgotPass_TestClass"/>
+          <class name="TestNG_Pack.Profile_TestClass"/>
+           <class name="TestNG_Pack.ChangePassword_TestClass"/>
+         
+    </classes>
+  </test> <!-- Test1 -->
+  
+</suite> <!-- Suite -->
