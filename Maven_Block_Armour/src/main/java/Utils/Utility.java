@@ -2,10 +2,12 @@ package Utils;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -36,9 +38,9 @@ public class Utility {
 	
 	} 
 		
-	public static String getExcelData(String sheetName,int rowNo,int cellNo) throws IOException  {
+	public static String getExcelData(String sheetName,int rowNo,int cellNo) throws IOException   {
 			
- String path="C:\\Users\\sanja\\eclipse-workspace\\Maven_Block_Armour\\src\\main\\resources\\Data\\Block1.xlsx";
+ String path="src\\main\\resources\\Data\\Block1.xlsx";
 
 	FileInputStream file= new FileInputStream(path);
  

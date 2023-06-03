@@ -9,11 +9,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class Base {
 	public static WebDriver OpenChromeBrowser() {
 
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sanja\\eclipse-workspace\\Block_Armour\\src\\test\\resources\\Browser_File\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sanja\\git\\Maven_Block_Armour_Project1\\Maven_Block_Armour\\src\\test\\resources\\BrowserFile\\chromedriver.exe");
 		ChromeOptions ops=new ChromeOptions();
 		ops.addArguments("--remote-allow-origins=*");
 	
-		
 		WebDriver driver=new ChromeDriver(ops);
 		return driver;
 	}
@@ -24,11 +23,6 @@ public class Base {
 		return driver;
 	}
 	
-	public static WebDriver OpenEgdeBrowser() {
-		System.setProperty("webdriver.edge.driver", "C:\\Users\\sanja\\eclipse-workspace\\Block_Armour\\src\\test\\resources\\Browser_File\\msedgedriver.exe");
-		WebDriver driver = new EdgeDriver();
-		return driver;
-	}
-
+	
 
 }

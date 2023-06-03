@@ -7,6 +7,68 @@
   <test thread-count="2" parallel="classes" name="ChromeTest(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
+      <class name="TestNG_Pack.ForgotPass_TestClass">
+        <methods>
+          <include name="clearObject"/>
+          <include name="afterMethod"/>
+          <include name="createPOMObject"/>
+          <include name="VerifyThatUserIsAbleToPassTheValidUsernameAndThenClickOnResetPasswordButtonThenSeeToastMessageOnUI"/>
+          <include name="afterTest"/>
+          <include name="VerifyThatUserIsAbleToClickOnForgotPasswordLinkAndNavigateOnResetPasswordPage"/>
+          <include name="OpenBrowser"/>
+          <include name="Open_the_Application"/>
+        </methods>
+      </class> <!-- TestNG_Pack.ForgotPass_TestClass -->
+      <class name="TestNG_Pack.Profile_TestClass">
+        <methods>
+          <include name="VerifyThatAfterLoginUserIsAbleToClickOnPolicyTab"/>
+          <include name="VerifyThatUserIsAbleToNavigateFromPolicyTabToLogsTab"/>
+          <include name="afterMethod"/>
+          <include name="createPOMObject"/>
+          <include name="afterTest"/>
+          <include name="VerifyThatAfterLoginUserIsAbleToNavigateOnProfilePage"/>
+          <include name="OpenBrowser"/>
+          <include name="Open_the_Application"/>
+          <include name="clearObject"/>
+        </methods>
+      </class> <!-- TestNG_Pack.Profile_TestClass -->
+      <class name="TestNG_Pack.ChangePassword_TestClass">
+        <methods>
+          <include name="OpenBrowser"/>
+          <include name="VerifyThatAfterLoginUserIsAbleToChangePassword"/>
+          <include name="Open_the_Application"/>
+          <include name="clearObject"/>
+          <include name="VerifyThatAfterChangingPasswordUserCanLoginWithNewPassword"/>
+          <include name="afterMethod"/>
+          <include name="createPOMObject"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- TestNG_Pack.ChangePassword_TestClass -->
+      <class name="TestNG_Pack.LoginPage_TestClass">
+        <methods>
+          <include name="VerifyUserIsAbleToSeeTheTextLogIntoYourAccountAfterComingOnLoginPage"/>
+          <include name="VerifyUserIsAbleToNavigateOnLoginPageAfterHitTheURL"/>
+          <include name="afterMethod"/>
+          <include name="createPOMObject"/>
+          <include name="OpenBrowser"/>
+          <include name="afterTest"/>
+          <include name="Open_the_Application"/>
+          <include name="VerifyThatLogInButtonIsDisplayOnLoginPageOrNot"/>
+          <include name="clearObject"/>
+        </methods>
+      </class> <!-- TestNG_Pack.LoginPage_TestClass -->
+      <class name="TestNG_Pack.LOGIN_TestClass">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="createPOMObject"/>
+          <include name="VerifyThatUserCanBeLogInByEnteringOldAccountValidCredentialAndClickOnLogInButton"/>
+          <include name="VerifyThatUserCanBeLogInByEnteringTheNewAccountCreatedValidCredentialAndClickOnLogInButton"/>
+          <include name="afterTest"/>
+          <include name="OpenBrowser"/>
+          <include name="Open_the_Application"/>
+          <include name="clearObject"/>
+        </methods>
+      </class> <!-- TestNG_Pack.LOGIN_TestClass -->
       <class name="TestNG_Pack.CreateAcc_TestClass">
         <methods>
           <include name="VerifyThatUserIsAbleToClickOnCreateAccountLinkThenItWillNavigateOnUserRegistarionpage"/>
@@ -30,6 +92,48 @@
           <include name="afterMethod"/>
         </methods>
       </class> <!-- TestNG_Pack.CreateAcc_TestClass -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="2" parallel="classes" name="FirefoxTest(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="TestNG_Pack.ForgotPass_TestClass">
+        <methods>
+          <include name="clearObject"/>
+          <include name="afterMethod"/>
+          <include name="createPOMObject"/>
+          <include name="VerifyThatUserIsAbleToPassTheValidUsernameAndThenClickOnResetPasswordButtonThenSeeToastMessageOnUI"/>
+          <include name="afterTest"/>
+          <include name="VerifyThatUserIsAbleToClickOnForgotPasswordLinkAndNavigateOnResetPasswordPage"/>
+          <include name="OpenBrowser"/>
+          <include name="Open_the_Application"/>
+        </methods>
+      </class> <!-- TestNG_Pack.ForgotPass_TestClass -->
+      <class name="TestNG_Pack.Profile_TestClass">
+        <methods>
+          <include name="VerifyThatAfterLoginUserIsAbleToClickOnPolicyTab"/>
+          <include name="VerifyThatUserIsAbleToNavigateFromPolicyTabToLogsTab"/>
+          <include name="afterMethod"/>
+          <include name="createPOMObject"/>
+          <include name="afterTest"/>
+          <include name="VerifyThatAfterLoginUserIsAbleToNavigateOnProfilePage"/>
+          <include name="OpenBrowser"/>
+          <include name="Open_the_Application"/>
+          <include name="clearObject"/>
+        </methods>
+      </class> <!-- TestNG_Pack.Profile_TestClass -->
+      <class name="TestNG_Pack.ChangePassword_TestClass">
+        <methods>
+          <include name="OpenBrowser"/>
+          <include name="VerifyThatAfterLoginUserIsAbleToChangePassword"/>
+          <include name="Open_the_Application"/>
+          <include name="clearObject"/>
+          <include name="VerifyThatAfterChangingPasswordUserCanLoginWithNewPassword"/>
+          <include name="afterMethod"/>
+          <include name="createPOMObject"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- TestNG_Pack.ChangePassword_TestClass -->
       <class name="TestNG_Pack.LoginPage_TestClass">
         <methods>
           <include name="VerifyUserIsAbleToSeeTheTextLogIntoYourAccountAfterComingOnLoginPage"/>
@@ -43,6 +147,41 @@
           <include name="clearObject"/>
         </methods>
       </class> <!-- TestNG_Pack.LoginPage_TestClass -->
+      <class name="TestNG_Pack.LOGIN_TestClass">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="createPOMObject"/>
+          <include name="VerifyThatUserCanBeLogInByEnteringOldAccountValidCredentialAndClickOnLogInButton"/>
+          <include name="VerifyThatUserCanBeLogInByEnteringTheNewAccountCreatedValidCredentialAndClickOnLogInButton"/>
+          <include name="afterTest"/>
+          <include name="OpenBrowser"/>
+          <include name="Open_the_Application"/>
+          <include name="clearObject"/>
+        </methods>
+      </class> <!-- TestNG_Pack.LOGIN_TestClass -->
+      <class name="TestNG_Pack.CreateAcc_TestClass">
+        <methods>
+          <include name="VerifyThatUserIsAbleToClickOnCreateAccountLinkThenItWillNavigateOnUserRegistarionpage"/>
+          <include name="Open_the_Application"/>
+          <include name="VerifyThatAfterClickOnUserNameTextBoxAndThenPassTheValueDirectlyInFirstNameTextBoxItWillGiveErrorUnderTheUserNameField"/>
+          <include name="VerifyThatByPassingTheAllValidDataInTextBoxesClickOnCreateButtonToastMessageWillSeeOnLogInPage"/>
+          <include name="VerifyThatUserIsAbleToSelectAndorraCountryCodePlus376AndPassSixDigitPhoneNumber"/>
+          <include name="OpenBrowser"/>
+          <include name="VerifyThatAfterNavigateOnUserRegistrationPageByDefaultUserTypeIsSelectedAsLocal"/>
+          <include name="VerifyThatAfterPassingMoreThan50CharacterInUserNameTextBoxItWillAcceptOrNot"/>
+          <include name="VerifyThatUserIsAbleToPassTheStringIntegerTypeDataInPasswordTextBox"/>
+          <include name="VerifyThatUserIsAbleToSelectUserTypeasDomain"/>
+          <include name="clearObject"/>
+          <include name="VerifyThatIfUserCanPassTheInvalidEmailIdInEmailIdTextBox"/>
+          <include name="VerifyThatUserIsAbleToPassTheStringIntegerTypeDataInFirstNameTextBox"/>
+          <include name="createPOMObject"/>
+          <include name="VerifyThatIfUserCanPassDifferentPasswordInBothPasswordAndConfirmPasswordField"/>
+          <include name="afterTest"/>
+          <include name="VerifyThatUserNameFieldAcceptStringTypeDataWithOneSpecialCharacterOrNot"/>
+          <include name="VerifyThatUserNameTextBoxAcceptTheStringTypeData"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- TestNG_Pack.CreateAcc_TestClass -->
     </classes>
-  </test> <!-- ChromeTest(failed) -->
+  </test> <!-- FirefoxTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
