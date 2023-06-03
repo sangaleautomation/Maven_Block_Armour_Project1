@@ -7,33 +7,17 @@
 		<listener class-name="extendReport.ExtentTestNGIReporterListener" />
 </listeners>
 
-  <test name="ChromeTest" thread-count="6" parallel="classes">
+  <test name="ChromeTest" thread-count="2" parallel="classes">
   <parameter name="browser" value="Chrome"/>
     <classes>
     <class name="TestNG_Pack.LoginPage_TestClass"/>
        <class name="TestNG_Pack.CreateAcc_TestClass"/>
-        <class name="TestNG_Pack.LOGIN_TestClass"/>
-         <class name="TestNG_Pack.ForgotPass_TestClass"/>
-          <class name="TestNG_Pack.Profile_TestClass"/>
-           <class name="TestNG_Pack.ChangePassword_TestClass"/>
+       
          
          
     </classes>
   </test> <!-- Test1 -->
   
 
-   <test  name="FirefoxTest" thread-count="6" parallel="classes">
-  <parameter name="browser" value="Firefox"/>
-    <classes>
-  
-   <class name="TestNG_Pack.LoginPage_TestClass"/>
-       <class name="TestNG_Pack.CreateAcc_TestClass"/>
-        <class name="TestNG_Pack.LOGIN_TestClass"/>
-         <class name="TestNG_Pack.ForgotPass_TestClass"/>
-          <class name="TestNG_Pack.Profile_TestClass"/>
-           <class name="TestNG_Pack.ChangePassword_TestClass"/>
-         
-    </classes>
-  </test> <!-- Test1 -->
   
 </suite> <!-- Suite -->

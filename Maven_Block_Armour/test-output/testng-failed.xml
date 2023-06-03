@@ -30,6 +30,19 @@
           <include name="afterMethod"/>
         </methods>
       </class> <!-- TestNG_Pack.CreateAcc_TestClass -->
+      <class name="TestNG_Pack.LoginPage_TestClass">
+        <methods>
+          <include name="VerifyUserIsAbleToSeeTheTextLogIntoYourAccountAfterComingOnLoginPage"/>
+          <include name="VerifyUserIsAbleToNavigateOnLoginPageAfterHitTheURL"/>
+          <include name="afterMethod"/>
+          <include name="createPOMObject"/>
+          <include name="OpenBrowser"/>
+          <include name="afterTest"/>
+          <include name="Open_the_Application"/>
+          <include name="VerifyThatLogInButtonIsDisplayOnLoginPageOrNot"/>
+          <include name="clearObject"/>
+        </methods>
+      </class> <!-- TestNG_Pack.LoginPage_TestClass -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
